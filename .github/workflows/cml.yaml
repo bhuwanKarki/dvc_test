@@ -22,6 +22,6 @@ jobs:
 
           echo "## Metrics" >> report.md
           echo "### bigrams-experiment → workspace" >> report.md
-          dvc metrics diff bigrams-experiment --show-md >> report.md
+          dvc metrics diff --show-md >> report.md
 
           cml-send-comment report.md
